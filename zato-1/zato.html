@@ -1,0 +1,1226 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zato-1 Frame Data</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="./zato.js"></script>
+    <link rel="stylesheet" href="zato.css">
+    <script>
+        $(function () {
+            // normals
+            $("#5ptabs").tabs();
+            $("#5ktabs").tabs();
+            $("#cstabs").tabs();
+            $("#fstabs").tabs();
+            $("#5htabs").tabs();
+            $("#5dtabs").tabs();
+            // crouching normals
+            $("#2ptabs").tabs();
+            $("#2ktabs").tabs();
+            $("#2stabs").tabs();
+            $("#2htabs").tabs();
+            $("#2dtabs").tabs();
+            // command normals
+            $("#6ptabs").tabs();
+            $("#6ktabs").tabs();
+            $("#3ktabs").tabs();
+            $("#6htabs").tabs();
+            // jumping normals
+            $("#jptabs").tabs();
+            $("#jktabs").tabs();
+            $("#jstabs").tabs();
+            $("#jhtabs").tabs();
+            $("#j2htabs").tabs();
+            $("#jdtabs").tabs();
+            // special moves
+            $("#summoneddietabs").tabs();
+            $("#breakthelawtabs").tabs();
+            $("#piercetabs").tabs();
+            $("#thatsalottabs").tabs();
+            $("#leaptabs").tabs();
+            $("#opposetabs").tabs();
+            $("#invitehelltabs").tabs();
+            // overdrives
+            $("#yamadatabs").tabs();
+            $("#goshogawaratabs").tabs();
+        });
+    </script>
+</head>
+
+<body>
+
+    <!-- sidebar -->
+
+    <aside id="sidebar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Anji Mito</a></li>
+            <li><a href="">Axl Low</a></li>
+            <li><a href="">Baiken</a></li>
+            <li><a href="">Bridget</a></li>
+            <li><a href="">Chipp Zanuff</a></li>
+            <li><a href="">Faust</a></li>
+            <li><a href="">Giovanna</a></li>
+            <li><a href="">Goldlewis Dickenson</a></li>
+            <li><a href="">Happy Chaos</a></li>
+            <li><a href="">I-No</a></li>
+            <li><a href="">Jack-O</a></li>
+            <li><a href="">Ky Kiske</a></li>
+            <li><a href="">Leo Whitefang</a></li>
+            <li><a href="">May</a></li>
+            <li><a href="">Millia Rage</a></li>
+            <li><a href="">Nagoriyuki</a></li>
+            <li><a href="">Potemkin</a></li>
+            <li><a href="">Ramlethal Valentine</a></li>
+            <li><a href="">Sol Badguy</a></li>
+            <li><a href="">Testament</a></li>
+            <li><a href="">Zato-1</a></li>
+        </ul>
+
+        <div id="sidebar-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </aside>
+
+    <h1>Zato-1</h1>
+    <br>
+    <img class="portrait" src="./images/Portrait.png" alt="May Character Portrait">
+
+    <!-- May Normals -->
+    <h1>Normals</h1>
+    <br>
+    <div class="tab">
+
+        <div id="5ptabs">
+            <ul>
+                <li>5P</li>
+                <li><a href="#5ptabs-1">Image</a></li>
+                <li><a href="#5ptabs-2">Hitbox</a></li>
+            </ul>
+            <div id="5ptabs-1">
+                <img class="image" src="./images/5P.png" alt="May 5P">
+            </div>
+            <div id="5ptabs-2">
+                <img class="image" src="./images/5P_Hitbox.png" alt="May 5P Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>3</td>
+                    <td>8</td>
+                    <td>-1</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="5ktabs">
+            <ul>
+                <li>5K</li>
+                <li><a href="#5ktabs-1">Image</a></li>
+                <li><a href="#5ktabs-2">Hitbox</a></li>
+            </ul>
+            <div id="5ktabs-1">
+                <img class="image" src="./images/5K.png" alt="May 5P">
+            </div>
+            <div id="5ktabs-2">
+                <img class="image" src="./images/5K_Hitbox.png" alt="May 5P Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>6</td>
+                    <td>11</td>
+                    <td>-5</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="cstabs">
+            <ul>
+                <li>c.S</li>
+                <li><a href="#cstabs-1">Image</a></li>
+                <li><a href="#cstabs-2">Hitbox</a></li>
+            </ul>
+            <div id="cstabs-1">
+                <img class="image" src="./images/cS.png" alt="May Close Slash">
+            </div>
+            <div id="cstabs-2">
+                <img class="image" src="./images/cs_Hitbox.png" alt="May Close Slash Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>44</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>+3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="fstabs">
+            <ul>
+                <li>f.S</li>
+                <li><a href="#fstabs-1">Image</a></li>
+                <li><a href="#fstabs-2">Hitbox</a></li>
+            </ul>
+            <div id="fstabs-1">
+                <img class="image" src="./images/fs.png" alt="May Far Slash">
+            </div>
+            <div id="fstabs-2">
+                <img class="image" src="./images/fs_Hitbox.png" alt="May Far Slash Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>38</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>3</td>
+                    <td>19</td>
+                    <td>-8</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="5htabs">
+            <ul>
+                <li>5H</li>
+                <li><a href="#5htabs-1">Image</a></li>
+                <li><a href="#5htabs-2">Hitbox</a></li>
+            </ul>
+            <div id="5htabs-1">
+                <img class="image" src="./images/5h.png" alt="May 5H">
+            </div>
+            <div id="5htabs-2">
+                <img class="image" src="./images/5h_Hitbox.png" alt="May 5H Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>55</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>8</td>
+                    <td>15</td>
+                    <td>-4</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="5dtabs">
+            <ul>
+                <li>5D</li>
+                <li><a href="#5dtabs-1">Image</a></li>
+                <li><a href="#5dtabs-2">Hitbox</a></li>
+            </ul>
+            <div id="5dtabs-1">
+                <img class="image" src="./images/5d.png" alt="5P">
+            </div>
+            <div id="5dtabs-2">
+                <img class="image" src="./images/5d_Hitbox.png" alt="">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50 [62]</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>20 [28]</td>
+                    <td>3 [3]</td>
+                    <td>26 [26]</td>
+                    <td>-15 [-10]</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- Zato Crouching Normals -->
+
+    <h1>Crouching Normals</h1>
+    <br>
+    <div class="tab">
+
+        <div id="2ptabs">
+            <ul>
+                <li>2P</li>
+                <li><a href="#2ptabs-1">Image</a></li>
+                <li><a href="#2ptabs-2">Hitbox</a></li>
+            </ul>
+            <div id="2ptabs-1">
+                <img class="image" src="./images/2p.png" alt="May 2P">
+            </div>
+            <div id="2ptabs-2">
+                <img class="image" src="./images/2p_Hitbox.png" alt="May 2P Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>24</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>-2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="2ktabs">
+            <ul>
+                <li>2K</li>
+                <li><a href="#2ktabs-1">Image</a></li>
+                <li><a href="#2ktabs-2">Hitbox</a></li>
+            </ul>
+            <div id="2ktabs-1">
+                <img class="image" src="./images/2k.png" alt="May 2K">
+            </div>
+            <div id="2ktabs-2">
+                <img class="image" src="./images/2k_Hitbox.png" alt="May 2K Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>low</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>4</td>
+                    <td>10</td>
+                    <td>-2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="2stabs">
+            <ul>
+                <li>2S</li>
+                <li><a href="#2stabs-1">Image</a></li>
+                <li><a href="#2stabs-2">Hitbox</a></li>
+            </ul>
+            <div id="2stabs-1">
+                <img class="image" src="./images/2s.png" alt="May 2S">
+            </div>
+            <div id="2stabs-2">
+                <img class="image" src="./images/2s_Hitbox.png" alt="May 2S Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>3</td>
+                    <td>18</td>
+                    <td>-7</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="2htabs">
+            <ul>
+                <li>2H</li>
+                <li><a href="#2htabs-1">Image</a></li>
+                <li><a href="#2htabs-2">Hitbox</a></li>
+            </ul>
+            <div id="2htabs-1">
+                <img class="image" src="./images/2H.png" alt="May 2H">
+            </div>
+            <div id="2htabs-2">
+                <img class="image" src="./images/2h_Hitbox.png" alt="May 2H Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>13</td>
+                    <td>26</td>
+                    <td>-20</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="2dtabs">
+            <ul>
+                <li>2D</li>
+                <li><a href="#2dtabs-1">Image</a></li>
+                <li><a href="#2dtabs-2">Hitbox</a></li>
+            </ul>
+            <div id="2dtabs-1">
+                <img class="image" src="./images/2D.png" alt="May 2D">
+            </div>
+            <div id="2dtabs-2">
+                <img class="image" src="./images/2D_Hitbox.png" alt="May 2D Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>low</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>7</td>
+                    <td>17</td>
+                    <td>-7</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- Zato Command Normals -->
+
+    <h1>Command Normals</h1>
+    <br>
+    <div class="tab">
+
+        <div id="6ptabs">
+            <ul>
+                <li>6P</li>
+                <li><a href="#6ptabs-1">Image</a></li>
+                <li><a href="#6ptabs-2">Hitbox</a></li>
+            </ul>
+            <div id="6ptabs-1">
+                <img class="image" src="./images/6p.png" alt="6P">
+            </div>
+            <div id="6ptabs-2">
+                <img class="image" src="./images/6p_Hitbox.png" alt="6P Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>6</td>
+                    <td>18</td>
+                    <td>-7</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="6ktabs">
+            <ul>
+                <li>6K</li>
+                <li><a href="#6ktabs-1">Image</a></li>
+                <li><a href="#6ktabs-2">Hitbox</a></li>
+            </ul>
+            <div id="6ktabs-1">
+                <img class="image" src="./images/6K.png" alt="May 6K">
+            </div>
+            <div id="6ktabs-2">
+                <img class="image" src="./images/6k_Hitbox.png" alt="May 6K Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>35</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>5</td>
+                    <td>11</td>
+                    <td>-2</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="6htabs">
+            <ul>
+                <li>6H</li>
+                <li><a href="#6htabs-1">Image</a></li>
+                <li><a href="#6htabs-2">Hitbox</a></li>
+            </ul>
+            <div id="6htabs-1">
+                <img class="image" src="./images/6h.png" alt="May 6H">
+            </div>
+            <div id="6htabs-2">
+                <img class="image" src="./images/6h_Hitbox.png" alt="May 6H Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>60 [90]</td>
+                    <td>mid [guard crush]</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>16-39 [40]</td>
+                    <td>6</td>
+                    <td>24</td>
+                    <td>-8 [+8]</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- Zato Jumping Normals-->
+
+    <h1>Jumping Normals</h1>
+    <br>
+    <div class="tab">
+
+        <div id="jptabs">
+            <ul>
+                <li>j.P</li>
+                <li><a href="#jptabs-1">Image</a></li>
+                <li><a href="#jptabs-2">Hitbox</a></li>
+            </ul>
+            <div id="jptabs-1">
+                <img class="image" src="./images/jp.png" alt="May jumping punch">
+            </div>
+            <div id="jptabs-2">
+                <img class="image" src="./images/jp_Hitbox.png" alt="May jumping punch Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>22</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>+2~5</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="jktabs">
+            <ul>
+                <li>j.K</li>
+                <li><a href="#jktabs-1">Image</a></li>
+                <li><a href="#jktabs-2">Hitbox</a></li>
+            </ul>
+            <div id="jktabs-1">
+                <img class="image" src="./images/jk.png" alt="May Jumping Kick ">
+            </div>
+            <div id="jktabs-2">
+                <img class="image" src="./images/jk_Hitbox.png" alt="May Jumping Kick Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>28</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>3</td>
+                    <td>12</td>
+                    <td>+0~3</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="jstabs">
+            <ul>
+                <li>j.S</li>
+                <li><a href="#jstabs-1">Image</a></li>
+                <li><a href="#jstabs-2">Hitbox</a></li>
+            </ul>
+            <div id="jstabs-1">
+                <img class="image" src="./images/js.png" alt="May Jumping Slash">
+            </div>
+            <div id="jstabs-2">
+                <img class="image" src="./images/js_Hitbox.png" alt="May Jumping Slash Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>34</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>15</td>
+                    <td>+6</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="jhtabs">
+            <ul>
+                <li>j.H</li>
+                <li><a href="#jhtabs-1">Image</a></li>
+                <li><a href="#jhtabs-2">Hitbox</a></li>
+            </ul>
+            <div id="jhtabs-1">
+                <img class="image" src="./images/jh.png" alt="May Jumping Heavy Slash">
+            </div>
+            <div id="jhtabs-2">
+                <img class="image" src="./images/jh_Hitbox.png" alt="May Jumping Heavy Slash Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>10</td>
+                    <td>15</td>
+                    <td>+9</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="jdtabs">
+            <ul>
+                <li>j.D</li>
+                <li><a href="#jdtabs-1">Image</a></li>
+                <li><a href="#jdtabs-2">Hitbox</a></li>
+            </ul>
+            <div id="jdtabs-1">
+                <img class="image" src="./images/jd.png" alt="May Jumping Dust">
+            </div>
+            <div id="jdtabs-2">
+                <img class="image" src="./images/jd_Hitbox.png" alt="May Jumping Dust Hitbox">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>60</td>
+                    <td>high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>6</td>
+                    <td>21</td>
+                    <td>-8</td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <!-- Zato Special Moves-->
+
+    <h1>Specials</h1>
+    <br>
+    <div class="tab">
+
+        <div id="summoneddietabs">
+            <ul>
+                <li>Summon Eddie</li>
+                <li><a href="#summoneddietabs-1">Image</a></li>
+            </ul>
+
+            <div id="summoneddietabs-1">
+                <img class="image" src="./images/SummonEddie.png" alt="May Horizontal Mr Dolphin">
+
+                <table>
+                    <tr>
+                        <th>damage</th>
+                        <th>Hit</th>
+                    </tr>
+                    <tr>
+                        <td>30</td>
+                        <td>mid</td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <th>startup</th>
+                        <th>active</th>
+                        <th>recovery</th>
+                        <th>on block</th>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>9 [18]</td>
+                        <td>11 (24 on hit)</td>
+                        <td>-3</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id="breakthelawtabs">
+            <ul>
+                <li>Break The Law</li>
+                <li><a href="#breakthelawtabs-1">Image</a></li>
+            </ul>
+            <div id="breakthelawtabs-1">
+                <img id="btl" src="./images/breakthelaw.png" alt="5P">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>6 (10 on K version)</td>
+                    <td>45</td>
+                    <td>+29</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="piercetabs">
+            <ul>
+                <li>Pierce</li>
+                <li><a href="#piercetabs-1">Image</a></li>
+                <li><a href="#piercetabs-2">Hitbox</a></li>
+            </ul>
+
+            <div id="piercetabs-1">
+                <img class="wideimage" src="./images/Pierce.png" alt="May vertical Mr Dolphin">
+            </div>
+
+            <div id="piercetabs-2">
+                <img class="wideimage" src="./images/Pierce_Hitbox.png" alt="May vertical Mr Dolphin Hitbox">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>Hit</th>
+                </tr>
+                <tr>
+                    <td>40</td>
+                    <td>mid -> high</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>19</td>
+                    <td>7 (21 on hit)</td>
+                    <td>0</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="thatsalottabs">
+            <ul>
+                <li>That's A lot</li>
+                <li><a href="#thatsalottabs-1">Image</a></li>
+                <li><a href="#thatsalottabs-2">Hitbox</a></li>
+            </ul>
+
+            <div id="thatsalottabs-1">
+                <img class="wideimage" src="./images/ThatsAlot.png" alt="5P">
+            </div>
+
+            <div id="thatsalottabs-2">
+                <img class="wideimage" src="./images/That'sAlot_Hitbox.png" alt="">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>throw</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>2</td>
+                    <td>40</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="leaptabs">
+            <ul>
+                <li>Leap</li>
+                <li><a href="#leaptabs-1">Image</a></li>
+                <li><a href="#leaptabs-2">Hitbox</a></li>
+            </ul>
+            <div id="leaptabs-1">
+                <img class="image" src="./images/leap.png" alt="5P">
+            </div>
+
+            <div id="leaptabs-2">
+                <img class="image" src="./images/leap_Hitbox.png" alt="5P">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>6 (10 on K version)</td>
+                    <td>45</td>
+                    <td>+29</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="opposetabs">
+            <ul>
+                <li>oppose</li>
+                <li><a href="#opposetabs-1">Guardpoint Image</a></li>
+                <li><a href="#opposetabs-2">Guardpoint Hitbox</a></li>
+                <li><a href="#opposetabs-3">Attack Image</a></li>
+                <li><a href="#opposetabs-4">Attack Hitbox</a></li>
+            </ul>
+            <div id="opposetabs-1">
+                <img class="image" src="./images/oppose.png" alt="5P">
+            </div>
+
+            <div id="opposetabs-2">
+                <img class="image" src="./images/oppose_Hitbox.png" alt="5P">
+            </div>
+
+            <div id="opposetabs-3">
+                <img class="image" src="./images/oppose2.png" alt="5P">
+            </div>
+
+            <div id="opposetabs-4">
+                <img class="image" src="./images/Oppose2_Hitbox.png" alt="5P">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>6 (10 on K version)</td>
+                    <td>45</td>
+                    <td>+29</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="invitehelltabs">
+            <ul>
+                <li>Invite Hell</li>
+                <li><a href="#invitehelltabs-1">Image</a></li>
+                <li><a href="#invitehelltabs-2">Hitbox</a></li>
+            </ul>
+            <div id="invitehelltabs-1">
+                <img class="wideimage" src="./images/invitehell.png" alt="5P">
+            </div>
+
+            <div id="invitehelltabs-2">
+                <img class="wideimage" src="./images/invitehell_Hitbox.png" alt="5P">
+            </div>
+
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>50</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>48</td>
+                    <td>6 (10 on K version)</td>
+                    <td>45</td>
+                    <td>+29</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <h1>Overdrives</h1>
+    <br>
+    <div class="tab">
+
+        <div id="yamadatabs">
+            <ul>
+                <li>Great Yamada Attack</li>
+                <li><a href="#yamadatabs-1">Image</a></li>
+                <li><a href="#yamadatabs-2">Hitbox</a></li>
+            </ul>
+            <div id="yamadatabs-1">
+                <img class="image" src="./images/Great_Yamada_Attack.png" alt="5P">
+            </div>
+            <div id="yamadatabs-2">
+                <img class="image" src="./images/Great_Yamada_Attack_Hitbox.png" alt="">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>190</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>recovery</th>
+                    <th>on block</th>
+                </tr>
+                <tr>
+                    <td>10+1</td>
+                    <td>88</td>
+                    <td>-54</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="goshogawaratabs">
+            <ul>
+                <li>The Wonderful and Dynamic Goshogawara</li>
+                <li><a href="#goshogawaratabs-1">Image</a></li>
+                <li><a href="#goshogawaratabs-2">Hitbox</a></li>
+            </ul>
+            <div id="goshogawaratabs-1">
+                <img class="image" src="./images/The_Wonderful_and_Dynamic_Goshogawara.png" alt="5P">
+            </div>
+            <div id="goshogawaratabs-2">
+                <img class="image" src="./images/The_Wonderful_and_Dynamic_Goshogawara_Hitbox.png" alt="">
+            </div>
+            <table>
+                <tr>
+                    <th>damage</th>
+                    <th>hit</th>
+                </tr>
+                <tr>
+                    <td>80, 100</td>
+                    <td>mid</td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <th>startup</th>
+                    <th>active</th>
+                    <th>on block</th>
+                    <th>invulerability</th>
+                </tr>
+                <tr>
+                    <td>6+4</td>
+                    <td>12(22)10</td>
+                    <td>-31</td>
+                    <td>full</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

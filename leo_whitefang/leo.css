@@ -1,0 +1,116 @@
+body {
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.portrait {
+    height: 600px;
+    width: 500px;
+}
+
+h1 {
+    margin-top: 100px;
+    padding-bottom: 0%;
+
+}
+
+
+.tab {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+
+.tab div {
+    margin: 10px;
+}
+
+.image {
+    height: 250px;
+    width: 250px;
+}
+
+.wideimage {
+    height: 250px;
+    width: 350px;
+}
+
+table {
+    display: table;
+    border-collapse: collapse;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+th,
+td {
+    border: 1px solid grey;
+    padding: 5px;
+}
+
+#sidebar {
+    width: 200px;
+    background: lightgray;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: -200px;
+    transition: left 0.2s ease;
+    z-index: 1001;
+}
+
+#sidebar.visible {
+    left: 0px;
+    transition: left 0.2s ease;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+#sidebar li {
+    list-style: none;
+    padding: 10px 0 10px 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#sidebar-btn {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 15px;
+    cursor: pointer;
+    margin: 20px;
+    position: absolute;
+    right: -60px;
+    top: 0px;
+}
+
+#sidebar-btn span {
+    background-color: black;
+    font-weight: bold;
+    height: 1px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#sidebar-btn span:nth-child(2) {
+    width: 75%;
+}
+
+.punch {
+    color: pink;
+}
