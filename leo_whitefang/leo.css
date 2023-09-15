@@ -31,9 +31,16 @@ h1 {
     margin: 10px;
 }
 
-.image {
+img {
     height: 250px;
     width: 250px;
+}
+
+#leo5k,
+#leo5h,
+#leo6h {
+    height: 250px;
+    width: 330px;
 }
 
 .wideimage {
